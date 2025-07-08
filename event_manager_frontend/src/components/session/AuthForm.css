@@ -1,0 +1,67 @@
+.auth-form-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../../assets/teatro_colon.jpg") center center/cover no-repeat;
+  z-index: 0;
+  /* Elimina overflow: hidden */
+}
+
+.auth-form-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+  z-index: 1;
+}
+
+.auth-form-container {
+  position: relative;
+  z-index: 2;
+  background: #4d4d4d;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.auth-form-container h2 {
+  margin-bottom: 1rem;
+  color: #282c34;
+  text-align: center;
+}
+
+.auth-form-container input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.auth-form-container button {
+  background-color: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+
+.auth-form-container button:hover {
+  background-color: #535bf2;
+}
+
+.auth-form-container p {
+  text-align: center;
+}

@@ -1,0 +1,157 @@
+.recital-bg {
+  min-height: 100vh;
+  background: url("../assets/Recital.jpg") center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+}
+
+.recital-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px #222;
+}
+
+.recital-desc {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px #222;
+}
+
+.play-bg {
+  min-height: 100vh;
+  background: url("../assets/teatro_colon.jpg") center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+}
+
+.play-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px #222;
+}
+
+.play-desc {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px #222;
+}
+
+.conference-bg {
+  min-height: 100vh;
+  background: url("../assets/conference.jpg") center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+}
+
+.conference-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px #222;
+}
+
+.conference-desc {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px #222;
+}
+
+.home-bg {
+  min-height: 100vh;
+  background: url("../assets/teatro_colon.jpg") center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px #222;
+}
+
+.home-desc {
+  color: #e0e0e0;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px #222;
+  text-align: center;
+  max-width: 600px;
+}
+
+.reservation-bg {
+  min-height: 100vh;
+  background: url("../assets/ticket.jpeg") center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px #222;
+}
+
+.reservation-desc {
+  color: #e0e0e0;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px #222;
+  text-align: center;
+  max-width: 600px;
+}
+
+.recital-bg,
+.play-bg,
+.conference-bg,
+.home-bg,
+.reservation-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.recital-bg::before,
+.play-bg::before,
+.conference-bg::before,
+.home-bg::before,
+.reservation-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según prefieras */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.recital-bg > *,
+.play-bg > *,
+.conference-bg > *,
+.home-bg > *,
+.reservation-bg > * {
+  position: relative;
+  z-index: 2;
+}

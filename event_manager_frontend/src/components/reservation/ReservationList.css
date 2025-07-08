@@ -1,0 +1,43 @@
+/* src/components/reservation/ReservationList.css */
+.reservation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.reservation-card {
+  background: #fff;
+  color: #222;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 1.2rem;
+  min-width: 260px;
+  max-width: 320px;
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+
+.reservation-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.reservation-info {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #e0e0e0;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px #222;
+  text-align: center;
+  max-width: 600px;
+}
