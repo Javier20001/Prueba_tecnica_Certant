@@ -129,3 +129,8 @@ mvn test
 - `POST /api/reservation` – Crear reserva
 - `PUT /api/reservation/{id}` – Editar reserva
 - `DELETE /api/reservation/{id}` – Baja lógica
+
+
+## 🔍 Documentación Swagger
+Podés acceder a la documentación completa de la API REST en Swagger UI:
+[http://localhost:9000/swagger-ui/index.html#/](http://localhost:9000/swagger-ui/index.html#/)
